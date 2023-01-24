@@ -49,7 +49,7 @@ const photoMessages = [
 
 const photoContent = [];
 
-const addPhotoContent = () => {
+const createPhotoContent = () => {
 
   for (let i = 0; i < PHOTO_QUANTITY; i++) {
     photoContent.push({
@@ -57,12 +57,12 @@ const addPhotoContent = () => {
       url: 'photos/' + (i + 1) + '.jpg',
       description: getRandomElementArr(photoDescriptions),
       likes: getRandomNumber(PhotoLikes.MIN, PhotoLikes.MAX),
-      comments: addComments(),
+      comments: createComments(),
     });
   }
 };
 
-const addComments = () => {
+const createComments = () => {
   const comments = [];
 
   for (let i = 0; i < getRandomNumber(PhotoCommentsQuantity.MIN, PhotoCommentsQuantity.MAX); i++) {
@@ -78,7 +78,6 @@ const addComments = () => {
   return comments;
 };
 
-// в разборе домашки так сделано addPhotoContent();
-addPhotoContent();
+createPhotoContent();
 
-export { photoContent };
+export { photoContent, createPhotoContent };

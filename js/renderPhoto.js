@@ -1,11 +1,8 @@
-import { photoContent, createPhotoContent }  from './data.js';
+import { photoContent }  from './data.js';
 
 const sectionForPhotos = document.querySelector('.pictures');
 const pictureTemplate = document.querySelector('#picture').content.querySelector('.picture');
 const pictureFragment = document.createDocumentFragment();
-
-// не очень понятно зачем в демострации делать копию объекта, если можно напрямую обратиться к готовому
-// const similarPhotoContent = photoContent;
 
 const renderPhotos = () => {
 
@@ -20,7 +17,6 @@ photoContent.forEach(({ url, likes, comments }) => {
     sectionForPhotos.appendChild(pictureFragment);
 };
 
-renderPhotos();
 export { renderPhotos }; 
 
 

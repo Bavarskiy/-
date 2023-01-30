@@ -1,3 +1,4 @@
-import { renderPhotos } from './renderPhoto.js';
+import { renderPageMiniatures } from './renderMiniatures.js';
 
-renderPhotos();
+
+renderPageMiniatures();

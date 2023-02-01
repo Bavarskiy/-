@@ -1,5 +1,4 @@
 import { getRandomNumber, getRandomElementArr } from './util.js';
-// Раздел 4
 
 const PAGE_MINIATURES_QUANTITY = 25;
 

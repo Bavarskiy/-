@@ -20,7 +20,7 @@ const getRandomNumber = (min, max) => {
 // проверка длины строки
 const getStringLength = (text, STRING_MAX_LENGTH) => {
   if (text.length > STRING_MAX_LENGTH) {
-    alert(`Текст в комментарии не должен превышать ${STRING_MAX_LENGTH} символов, Вы написали `+ (text.length - STRING_MAX_LENGTH) +` лишних символа(ов)`);
+    alert(`Текст в комментарии не должен превышать ${STRING_MAX_LENGTH} символов, Вы написали ${text.length - STRING_MAX_LENGTH} лишних символа(ов)`);
   }
   return text.length <= STRING_MAX_LENGTH;
 };

@@ -1,4 +1,5 @@
 import { pageMiniatures } from './data.js'
+
 // заводим переменную под шаблон
 const pictureTemplate = document.querySelector('#picture').content.querySelector('.picture');
 // заводим переменную под место для вставки готового элемента
@@ -18,4 +19,10 @@ const renderPageMiniatures = () => {
     placeForPageMiniatures.appendChild(picturesFragment);
 }
 
-export { renderPageMiniatures } 
+const clearPageMiniatures = () => {
+    placeForPageMiniatures.innerHTML = '';
+};
+
+renderPageMiniatures();
+
+export { renderPageMiniatures, clearPageMiniatures } 

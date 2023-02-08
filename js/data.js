@@ -66,7 +66,7 @@ const createPageMiniaturesComments = () => {
 
   for (let i = 0; i < getRandomNumber(pageMiniaturesCommentsQuantity.MIN, pageMiniaturesCommentsQuantity.MAX); i++) {
     comments.push({
-      // Ниже магические цифры. Я не стал делать отдельную const для этого id,
+      // 1 - 999 магические цифры. Я не стал делать отдельную const для этого id,
       // потому что есть id комментария, и есть id комментатора. В нейминге можно запутаться
       id: getRandomNumber(1, 999),
       avatar: 'img/avatar-' + getRandomNumber(pageMiniaturesAvatarRandomNumber.MIN, pageMiniaturesAvatarRandomNumber.MAX) + '.svg',
